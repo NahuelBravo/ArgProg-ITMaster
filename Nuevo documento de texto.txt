@@ -1,0 +1,100 @@
+Ejercicio 26:Escribir un programa que permita ingresar la cantidad de invitados a una fiesta 
+y la cantidad de asientos disponibles en el salon. 
+Debes indicar si alcanzan los asientos, Si los asientos no alcanzaran indicar cu�ntos 
+faltan para que todos los invitados puedan sentarse.
+
+Ejercicio 27:Escribir un programa que permita ingresar una edad (entre 1 y 120 a�os), 
+un g�nero ('F'para mujeres, 'M' para hombres) y un nombre. 
+En caso de haber ingresado valores err�neos (edad fuera de rango o g�nero inv�lido), 
+informar tal situaci�n indicando el nombre de la persona. 
+Si los datos est�n bien ingresados el programa debe indicar, 
+sabiendo que las mujeres se jubilan con 60 a�os o m�s y los hombres con 65 a�os o m�s, 
+si la persona est� en edad de jubilarse.
+
+
+Ejercicio 28:Crear un programa que pida un n�mero de mes (ejemplo 4) y escriba el nombre del mes en letras ("abril"). Verificar que el mes sea v�lido e informar en caso que no lo sea.
+Ejercicio 29:Escribir un programa que permita Ingresar las notas de los dos parciales de un alumno e indicar si promocion�, aprob� o debe recuperar. Si el valor de la nota no esta entre 0 y 10, debe informar un error.
+
+Se promociona cuando las notas de ambos parciales son mayores o iguales a 7.
+Se aprueba cuando las notas de ambos parciales son mayores o iguales a 4.
+Se debe recuperar cuando al menos una de las dos notas es menor a 4.
+Ejercicio 30:Escribir un programa que permita al usuario ingresar dos n�meros enteros. La computadora debe indicar si el mayor es divisible por el menor.
+
+(Un n�mero entero a es divisible por un n�mero entero b cuando el resto de la divisi�n entre a y b es 0)
+
+Ejercicio 31:Una editorial determina el precio de un libro seg�n la cantidad de p�ginas que contiene. El costo b�sico del libro es de $1000, m�s $35,10 por p�gina con encuadernaci�n r�stica. Si el n�mero de p�ginas supera las 300 la encuadernaci�n debe ser especial, lo que incrementa el costo en $1200. Adem�s, si el n�mero de p�ginas sobrepasa las 600 se hace necesario otro procedimiento de encuadernaci�n que incrementa el costo en $880. Desarrollar un programa que calcule el costo de un libro dado el n�mero de p�ginas.
+
+En Python no existen constantes como tal, pero se utiliza una convenci�n de nomenclatura en may�sculas para indicar que una variable no debe ser modificada. Esto se conoce como "constante simb�lica" o "constante convencional". Para definir una constante convencional, simplemente se define una variable con un nombre en may�sculas.
+
+Por ejemplo, para el problema anterior, se pueden definir las constantes:
+
+COSTO_BASICO con valor 1000
+
+COSTO_POR_PAGINA con valor 35.10
+
+COSTO_ENC_RUSTICA con valor 1200
+
+COSTO_ENC_ESPECIAL con valor 880.
+
+Es una buena pr�ctica utilizar constantes para almacenar valores fijos en un programa, ya que facilita la lectura del c�digo y su mantenimiento, evita errores por la modificaci�n accidental de valores y permite un f�cil ajuste de los valores fijos en caso de ser necesario.
+
+# constantes simb�licas
+COSTO_BASICO = 1000
+COSTO_POR_PAGINA = 35.10
+COSTO_ENC_RUSTICA = 1200
+COSTO_ENC_ESPECIAL = 880
+
+num_paginas = int(input("Ingrese el n�mero de p�ginas del libro: "))
+costo = COSTO_BASICO + (COSTO_POR_PAGINA * num_paginas)
+
+# Escriba lo que falta de la soluci�n aqu�
+
+print("El costo del libro es: $", costo)
+Ejercicio 32:Una remiser�a requiere un sistema que calcule el precio de un viaje a partir de la cantidad de km que desea recorrer el usuario.
+
+Tiene la siguiente tarifa:
+
+Viaje m�nimo $50
+Si recorre entre 0 y 10km: $20/km
+Si recorre 10km o m�s: $15/km
+Escribir un programa que permita ingresar la cantidad de km que desea recorrer el usuario y muestre el precio del viaje.
+Ejercicio 33:La farmacia Sindical efect�a descuentos a sus afiliados seg�n el importe de la compra con la siguiente escala:
+
+Menor de $5500.0 el descuento es del 4.5%
+Entre $5500.0 y $10000.0 el descuento es del 8%
+M�s de $10000.0 el descuento es del 10.5%
+Escribir un programa que reciba un importe e informe: el descuento y el precio neto a cobrar, con mensajes aclaratorios.
+Ejercicio 34:Escribir un programa que calcule y muestre el sueldo neto de un empleado en base a su sueldo b�sico y su antig�edad en a�os. Si es soltero se le incrementa el sueldo en 5% del salario bruto por cada a�o de antig�edad, mientras que si es casado se le incrementa el sueldo en 7% del salario bruto por cada a�o de antig�edad. Tambi�n se le realizan los siguientes descuentos:
+
+Jubilaci�n: 11%
+
+Obra Social: 3%
+
+Sindicato: 3%
+
+Como datos de entrada se ingresa por teclado el sueldo b�sico, antig�edad y estado civil (S: Soltero / C: Casado). Se debe informar: (reemplazando los 9 por los valores que correspondan)
+Estado Civil: Soltero/Casado Sueldo b�sico: $ 999.99 Antig�edad: 99 a�os
+
+Descuentos:
+
+Jubilaci�n - 999,99
+
+Obra Social - 999,99
+
+Sindicato - 999,99
+
+Sueldo Neto 999,99
+Ejercicio 35:Existen dos reglas que identifican dos conjuntos de valores:
+
+a) El n�mero es de un solo d�gito.
+b) El n�mero es impar.
+A partir de estas reglas, escribir un programa que permita ingresar un n�mero entero.
+
+Debe asignar el valor que corresponda a las variables booleanas:
+
+esDeUnSoloDigito
+esImpar
+estaEnAmbos
+noEstaEnNinguno
+el valor Verdadero o Falso, seg�n corresponda, para indicar si el valor n�mero ingresado pertenece o no a cada conjunto. Definir un lote de prueba de varios n�meros y probr el algoritmo, escribiendo los resultados.
+Ejercicio 36: Escribir un programa que permita ingresar dos n�meros enteros y la operaci�n a realizar('+', '-', '*', '/'). Debe mostrarse el resultado para la operaci�n ingresada. Considerar que no se puede dividir por cero (en ese caso mostrar el texto 'ERROR').
